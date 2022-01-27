@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>3 Rows, 2 Columns A</title>
+		<style type="text/css">
+		table { background-color:#426c79; }
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+
+		main {
+			position: fixed;
+			top: 50px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 230px; 
+			right: 0;
+			overflow: auto; 
+			background: #00213a;
+		}
+				
+		#header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50px; 
+			overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #426c79;
+		}
+
+		#footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50px; 
+			overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #426c79;
+		}
+				
+		#nav {
+			position: absolute; 
+			top: 50px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 0; 
+			width: 230px;
+			overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+			background: #f89554; 		
+		}
+		
+		.innertube {
+			margin: 15px; /* Provides padding for the content */
+			
+			
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+				
+		/*IE6 fix*/
+		* html body{
+			padding: 50px 0 50px 230px; /* Set the first value to the height of the header, the third value to the height of the footer, and last value to the width of the nav */
+		}
+		
+		* html main{ 
+			height: 100%; 
+			width: 100%; 
+		}
+		
+		</style>
+		
+			
+	
+	</head>
+	
+	<body>		
+
+		<header id="header">
+			<div class="innertube">
+				<p></p>
+			</div>
+		</header>
+				
+		<main>
+			<div class="innertube">
+				
+				<center><h1 style="font-color: white">Course 0002</h1>
+				
+ <form name ="student" method="post" action="register.php">
+ 
+ <div class="container">
+ <div class="row">
+ <table border=10 class="bg-info text-white display-7 font-weight-bold">
+ <thead>
+ <h3 class="bg-info" style= "font-size: 200%; font-weight-bold"> <b> </b></h3>
+ 
+ </thead>
+ 
+ <tr>
+ <td>Picture</td>
+ <td>No.</td>
+ <td>Student</td>
+ <td>Course Code</td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+ <td>Mark Register<br><input type="date" id="iMARK" value=""></td>
+
+ </tr>
+ 
+ <tr><td><img src="stu1.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu1.html>Ibrahim Ali</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+
+
+
+
+
+<tr><td><img src="stu2.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu2.html>Hakim Sani</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ 
+ 
+ 
+ 
+ <tr><td><img src="stu3.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu3.html>John Favo</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ 
+ 
+ 
+ 
+ <tr><td><img src="stu4.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu4.html>Ela Grace</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ 
+ 
+ <tr><td><img src="stu5.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu5.html>Aisha Ibro</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ 
+ 
+ 
+ <tr><td><img src="stu6.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu6.html>Mo lawan</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ 
+ 
+ 
+ <tr><td><img src="stu7.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu7.html>Linus Tek</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ 
+ 
+ 
+ <tr><td><img src="stu8.png" width="47 height="55" ></td><td><center>1</center></td>
+ <td class="p-2 mb-2 bg-white text-dark"><a href=stu8.html>Dani Jay</td>
+ <td class="text-center">0002</td>
+ 
+ <td><select name="row1col1" id="irow1col1" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present1">Present</option>
+ <option value = "absent1">Absent</option>
+ <option value = "late1">Late</option>
+ </select></td>
+ 
+ <td><select name="row2col2" id="irow2col2" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present2">Present</option>
+ <option value = "absent2">Absent</option>
+ <option value = "late2">Late</option>
+ </select></td>
+ 
+ <td><select name="row3col3" id="irow3col3" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present3">Present</option>
+ <option value = "absent3">Absent</option>
+ <option value = "late3">Late</option>
+ </select></td>
+ 
+ <td><select name="row4col4" id="irow4col4" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present4">Present</option>
+ <option value = "absent4">Absent</option>
+ <option value = "late4">Late</option>
+ </select></td>
+ 
+ <td><select name="row5col5" id="irow5col5" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present5">Present</option>
+ <option value = "absent5">Absent</option>
+ <option value = "late5">Late</option>
+ </select></td>
+ 
+ <td><select name="row6col6" id="irow6col6" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present6">Present</option>
+ <option value = "absent6">Absent</option>
+ <option value = "late6">Late</option>
+ </select></td>
+ 
+ <td><select name="row7col7" id="irow7col7" style="width: 120px; margin:1px; text-align:right" 
+ onchange= "myMark1(this.value);">
+ 
+ <option value = "space"></option>
+ <option value = "present7">Present</option>
+ <option value = "absent7">Absent</option>
+ <option value = "late7">Late</option>
+ </select></td>
+ </tr>
+ 
+ <tr>
+ <td colspan=4 class="p-2 mb-2 bg-white text-dark">Attendance Total</td>
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ <td>
+ <input type="text" name="txtreg" id="txt1" style= "width: 120px; text-align:right" value=0>
+ </td>
+ 
+ 
+
+ 
+ 
+ 
+ </table>
+ </div>
+ </div>
+ </form>
+ </center>
+ 
+ 
+				
+			</div>
+		</main>
+
+	<nav id="nav">
+			<div class="innertube">
+				<h1><a href="attendance registry1.html">Course 0001</a></h1>
+				<ul>
+					<br><br> <br><br> <br><br> <br><br> 
+				</ul>
+				<h1><a href="attendance registry2.html">Course 0002</a></h1>
+				<ul>
+					<br><br> <br><br> <br><br> <br><br> 
+				</ul>
+
+			</div>
+		</nav>	
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p><a href="Login5.html">Logout</a></p>
+			</div>
+		</footer>	
+			
+	</body>
+</html>

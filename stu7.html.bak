@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title> Student 1</title>
+	<style type="text/css">
+body {
+	background-color: #00213a);
+}
+table { background-color: #426c79; }
+
+
+.cbtn{
+	width:50px;
+	height:40px;
+	font-size:50;
+	border-radius:4px
+}
+</style>
+</head>
+<center>
+<h1>Student Personal Details</h1>
+<h2>
+<p>
+<table border="1">
+<tr><td rowspan=12> <img src="stu7.png" width="160" height="200"></td>
+
+<td>
+	<table border="1">
+	<thead>
+	Linus Tek - Personal Details &nbsp &nbsp &nbsp &nbsp &nbsp
+	
+	Academic Year:<select name = "academic" id= "iAcademic" style="width: 100px; margin: 2px;
+	text-align:right" class='cbtn'>
+	
+	<option Value="2019-2020">2019 - 2020</option>
+	<option Value="2020-2021">2020 - 2021</option>
+	<option Value="2021-2022">2021 - 2022</option>
+	<option Value="2022-2023">2022 - 2023</option>
+
+</thead>
+
+<tfoot>
+<tr><td colspan='4' align='center'><b>
+Restrictions on use of Learner Records</b></td>
+</tr>
+</tfoot>
+
+<tr>
+<td>Ref No:</td> <td>00001</td> <td>ULN:</td> <td style="width: 200px">353658</td>
+</tr>
+
+<tr>
+<td>Surname:</td> <td>Tek</td> <td>NI number:</td> <td>4584973945</td>
+</tr>
+
+<tr>
+<td>Firstname:</td> <td>Linus</td> <td>UCI No:</td> <td>35362758L</td>
+</tr>
+
+<tr>
+<td>Middlename:</td> <td></td> <td>EMA Code:</td> <td>EC530583</td>
+</tr>
+
+
+<tr>
+<td>Preferred Name :</td> <td>Linus Tek</td> <td>ALG No:</td> <td>AN876998</td>
+</tr>
